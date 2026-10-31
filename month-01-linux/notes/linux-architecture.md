@@ -23,7 +23,7 @@ The KERNEL manages important things like:
     networking: "manages network communication",
     security: "controls permissions and access".
 
-## 3.System call 
+# 3.System call 
 
 A system call is a mechanism that allows a program to request services from the kernel.
 open() — open a file. | read() — read data.
