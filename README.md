@@ -10,7 +10,7 @@ Build a solid foundation in cloud infrastructure and platform engineering throug
 
 | Month | Topic | Status |
 |---|---|---|
-| 01 | Linux & Bash | Not started |
+| 01 | Linux & Bash | started |
 | 02 | Networking Fundamentals | Not started |
 | 03 | Docker & Containerization | Not started |
 | 04 | Microsoft Azure | Not started |
