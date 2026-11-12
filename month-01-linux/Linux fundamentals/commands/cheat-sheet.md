@@ -86,3 +86,12 @@ wc notes.txt : "return nb lines, words, bytes"
 -l : "count lines",
 -w : "count words",
 -c : "count bytes",
+
+9. permissions
+
+chmod: Change permission
+whoami : "display current user",
+id : "Displays your user ID, group ID and group memberships",
+groups : "Displays your groups",
+getent passwd : "Displays user account entries",
+getent group :" Displays group entries",
