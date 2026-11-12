@@ -95,3 +95,15 @@ id : "Displays your user ID, group ID and group memberships",
 groups : "Displays your groups",
 getent passwd : "Displays user account entries",
 getent group :" Displays group entries",
+
+10. usees&groups
+
+useradd	: "Create a user"
+adduser	: "Interactive user creation"
+usermod	: "Modify a user"
+userdel	: "Delete a user"
+passwd	: "Set/change password"
+groupadd : "Create a group"
+groupdel : "Delete a group"
+gpasswd : "Manage group membership"
+getent : "Retrieve account/group information"

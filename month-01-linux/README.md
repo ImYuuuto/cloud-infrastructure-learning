@@ -3,9 +3,9 @@ Week 1 — Linux fundamentals
 - Linux architecture
 - Filesystem hierarchy
 - Navigation and file management
-- Reading and editing files ==> Here
+- Reading and editing files 
 - Permissions  
-- Users and groups
+- Users and groups ==> current progress
 
 
 Week 2 — System administration
