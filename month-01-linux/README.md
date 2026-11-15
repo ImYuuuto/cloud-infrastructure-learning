@@ -5,13 +5,11 @@ Week 1 — Linux fundamentals
 - Navigation and file management
 - Reading and editing files 
 - Permissions  
-- Users and groups ==> current progress
+- Users and groups 
 
 
 Week 2 — System administration
-- Users and groups management
-- File permissions (chmod, chown)
-- Processes (ps, top, htop, kill)
+- Processes (ps, top, htop, kill) ==> current progress
 - Package management (apt)
 - Environment variables
 - PATH and executable permissions

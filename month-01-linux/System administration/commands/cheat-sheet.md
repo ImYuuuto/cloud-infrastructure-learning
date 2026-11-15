@@ -26,3 +26,19 @@
 * `jobs` — List active jobs in current shell
 * `bg` — Resume suspended job in background
 * `fg` — Bring background job to foreground
+
+### APT
+* `sudo apt update` — Updates package information
+* `sudo apt upgrade` — Upgrade installed packages
+* `sudo apt install <name>` — Install software
+* `sudo apt remove <name>` — Remove software
+* `sudo apt autoremove` — Remove unnecessary dependencies
+* `apt search <name>` — Searchs available package information
+* `apt list --installed` — List installed packages
+* `apt list --installed | grep <name>` — Check for specific package
+* `apt show <name>` — 	Displays package information
+* `which <name>` — 	 locates the exact file path of an executable program
+
+
+
+
