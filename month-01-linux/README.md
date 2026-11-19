@@ -9,11 +9,11 @@ Week 1 — Linux fundamentals
 
 
 Week 2 — System administration
-- Processes (ps, top, htop, kill) ==> current progress
+- Processes (ps, top, htop, kill) 
 - Package management (apt)
-- Environment variables
+- Environment variables ==> current progress
 - PATH and executable permissions
-
+   
 
 Week 3 — Networking and services
 - Networking fundamentals

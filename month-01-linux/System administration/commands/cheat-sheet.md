@@ -40,5 +40,22 @@
 * `which <name>` — 	 locates the exact file path of an executable program
 
 
+### Environment Variables
+- `printenv` — Display all exported environment variables
+- `printenv <VAR>` — Display value of a specific exported variable (e.g., `printenv PORT`)
+- `env` — Display environment variables or run a command with a modified environment
+- `echo $<VAR>` — Display value of a shell or environment variable (e.g., `echo $APP_NAME`)
+- `<VAR>="<value>"` — Create local shell variable *(no spaces around `=`; not inherited by child processes)*
+- `export <VAR>="<value>"` — Create/export environment variable *(inherited by child processes)*
+- `export <VAR>` — Export an existing shell variable to child processes
+- `unset <VAR>` — Remove/delete a shell or environment variable
+- `source ~/.bashrc` — Reload `~/.bashrc` in current shell session
+- `<VAR>=<value> <cmd>` — Pass a variable to a single command without exporting to the shell (e.g., `PORT=4000 node server.js`)
 
+| Config File | Scope / Purpose |
+| :--- | :--- |
+| `~/.bashrc` | Interactive non-login Bash shell configuration (per-user) |
+| `~/.profile` | User login-session configuration (per-user) |
+| `/etc/environment` | System-wide static environment assignments *(edit with care)* |
+| `/etc/profile` | System-wide login-shell configuration *(edit with care)* |
 
