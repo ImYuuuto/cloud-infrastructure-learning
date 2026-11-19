@@ -12,12 +12,12 @@ Week 2 — System administration
 - Processes (ps, top, htop, kill) 
 - Package management (apt)
 - Environment variables 
-- PATH and executable permissions ==> current progress
+- PATH and executable permissions 
    
 
 Week 3 — Networking and services
 - Networking fundamentals
-- IP addresses and ports
+- IP addresses and ports ==> current progress
 - DNS and troubleshooting
 - SSH and remote connections
 - Services and systemd
