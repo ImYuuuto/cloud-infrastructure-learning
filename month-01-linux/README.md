@@ -18,8 +18,8 @@ Week 2 — System administration
 Week 3 — Networking and services
 - Networking fundamentals
 - IP addresses and ports 
-- DNS and troubleshooting ==> current progress
-- SSH and remote connections
+- DNS and troubleshooting 
+- SSH and remote connections ==> current progress
 - Services and systemd
 - Logs and journalctl
 - Firewall basics
