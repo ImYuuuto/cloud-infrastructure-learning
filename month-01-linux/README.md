@@ -20,8 +20,8 @@ Week 3 — Networking and services
 - IP addresses and ports 
 - DNS and troubleshooting 
 - SSH and remote connections 
-- Services and systemd ==> current progress
-- Logs and journalctl
+- Services and systemd 
+- Logs and journalctl ==> current progress
 - Firewall basics
 
 
