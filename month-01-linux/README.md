@@ -21,12 +21,12 @@ Week 3 — Networking and services
 - DNS and troubleshooting 
 - SSH and remote connections 
 - Services and systemd 
-- Logs and journalctl ==> current progress
+- Logs and journalctl 
 - Firewall basics
 
 
 Week 4 — Bash scripting and automation
-- Variables and input
+- Variables and input ==> current progress
 - Conditions
 - Loops
 - Functions
