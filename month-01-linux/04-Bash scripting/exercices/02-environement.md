@@ -12,7 +12,7 @@ Requirements:
    - prod: Production mode enabled.
 5. Invalid input should display an error message.  GNU nano 8.7.
 
-## answer
+```bash
 
 #! /bin/bash
 
@@ -31,7 +31,7 @@ case "$answer" in
         *)
         echo "error"
 esac
-
+```
 
 
 

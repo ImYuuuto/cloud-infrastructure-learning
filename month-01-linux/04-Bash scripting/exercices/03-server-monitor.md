@@ -9,8 +9,8 @@ Requirements:
 5. If it's offline, display WARNING: Server is offline.
 6. Continue checking until the server becomes online.
 
-## Answer 
 
+```bash
 #!/bin/bash
 
 server_status="offline"
@@ -27,4 +27,5 @@ while [ "$server_status" = "offline" ]; do
 
         echo "WARINING: Server is offline"
 done
+```
 

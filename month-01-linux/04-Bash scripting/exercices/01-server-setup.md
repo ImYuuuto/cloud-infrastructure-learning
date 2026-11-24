@@ -8,8 +8,7 @@ Your script should:
 4. Store the current hostname automatically.
 5. Display a configuration summary.
 
-## Answer
-  GNU nano 8.7.1                                                                                    server-setup.sh
+```bash                                  server-setup.sh
 #! /bin/bash
 
 read -p "Enter server name: " serverName
@@ -25,3 +24,4 @@ echo "Administrator: $username"
 echo "Machine hostname: $host"
 echo "                         "
 echo "configuration completed."
+```
