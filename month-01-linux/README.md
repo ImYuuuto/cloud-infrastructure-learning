@@ -26,7 +26,7 @@ Week 3 — Networking and services
 
 
 Week 4 — Bash scripting and automation
-- Variables and input ==> current progress
+- Variables and input 
 - Conditions
 - Loops
 - Functions
