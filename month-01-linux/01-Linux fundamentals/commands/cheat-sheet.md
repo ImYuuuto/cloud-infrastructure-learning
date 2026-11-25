@@ -1,109 +1,122 @@
-1. Navigation commands
+# Linux Fundamentals — Command Cheat Sheet
 
-cd ~ : "to access home directory",
-pwd : "Displays your current directory",
-ls : "Lists directory contents",
-cd .. : "Moves one directory backward (to the parent)",
-cd ~ : "Returns to your home directory",
-cd - : "Returns to your previous working directory",
-ls -l : "Detailed list",
-ls -a : "Include hidden files",
-ls -ls : "Detailed list including hidden files",
-ls -lh : "Human-readable file sizes",
-ls -R :	"Recursive listing",
+## 1. Navigation
 
-2. Creating files and directories
+| Command | Description |
+| --- | --- |
+| `cd ~` | Go to the home directory |
+| `pwd` | Display the current directory |
+| `ls` | List directory contents |
+| `cd ..` | Move to the parent directory |
+| `cd -` | Return to the previous working directory |
+| `ls -l` | Show a detailed listing |
+| `ls -a` | Include hidden files |
+| `ls -lh` | Show file sizes in human-readable form |
+| `ls -R` | List directories recursively |
 
-mkdir <projects> : "Creates a directory",
-mkdir -p </home/projects>: "The -p option creates missing parent directories automatically",
-touch <index.js> : "Creates an empty file if it doesn't exist",
-touch index.js server.js package.json: "Create multiple files",
+## 2. Creating files and directories
 
-3. Copying files and directories
+| Command | Description |
+| --- | --- |
+| `mkdir projects` | Create a directory |
+| `mkdir -p /home/projects` | Create missing parent directories automatically |
+| `touch index.js` | Create an empty file if it does not exist |
+| `touch index.js server.js package.json` | Create multiple files |
 
-cp index.js backup.js: "Creates a copy called backup.js",
-cp index.js backup/: "Copy file to another directory",
-cp -r project project-backup: "copy a directory",
-cp -i index.js backup.js: "i is to ovewrite an existing destination",
+## 3. Copying files and directories
 
-4. Moving and renaming
+| Command | Description |
+| --- | --- |
+| `cp index.js backup.js` | Copy a file to `backup.js` |
+| `cp index.js backup/` | Copy a file into another directory |
+| `cp -r project project-backup` | Copy a directory recursively |
+| `cp -i index.js backup.js` | Prompt before overwriting a destination |
 
-mv index.js scripts/ : "Move file",
-mv project archive/ : "Move directory",
-mv <old name> <new name>: "Rename file (same applies for directories)",
+## 4. Moving and renaming
 
-5. Deleting files and directories
+| Command | Description |
+| --- | --- |
+| `mv index.js scripts/` | Move a file |
+| `mv project archive/` | Move a directory |
+| `mv old-name new-name` | Rename a file or directory |
 
-rm index.js : "Delete file",
-rmdir old-folder : "Delete directory",
-rm -r old-folder : "Delete directory containing files",
-rm -rf old-folder : "Force deletion"
+## 5. Deleting files and directories
 
-6. Finding files and directories
+| Command | Description |
+| --- | --- |
+| `rm index.js` | Delete a file |
+| `rmdir old-folder` | Delete an empty directory |
+| `rm -r old-folder` | Delete a directory and its contents |
+| `rm -rf old-folder` | Force deletion without prompting |
 
-find . -name "server.js" : "find server.js inside the current directory",
-find . -name ".js" : "find all js files",
-find . -type d : "find directories",
-find . -type f : "find files only",
-find . -type f -size +10M : "files larger than 10mb"
+## 6. Finding files and directories
 
-7. Wildcards
+| Command | Description |
+| --- | --- |
+| `find . -name "server.js"` | Find `server.js` under the current directory |
+| `find . -name "*.js"` | Find JavaScript files under the current directory |
+| `find . -type d` | Find directories |
+| `find . -type f` | Find files |
+| `find . -type f -size +10M` | Find files larger than 10 MB |
 
-* : "Matches zero or more characters",
-? : "Matches exactly one character",
-[abc] : "Matches one character from the set"
+## 7. Wildcards
 
-8. Files manipulation
+| Pattern | Description |
+| --- | --- |
+| `*` | Matches zero or more characters |
+| `?` | Matches exactly one character |
+| `[abc]` | Matches one character from the set |
 
-cat notes.txt : "display file content",
-cat -n notes.txt : "with line numbers",
-cat > notes.txt : "write into a file",
-cat >> notes.txt : "append into a file",
+## 8. Reading and manipulating files
 
-less notes.txt : "for large files",
-Space : "Next page",
-b : "Previous page",
-Arrow Down : "Move down",
-Arrow Up : "Move up",
-/error : "Search for "error"",
-n :	"Next search result",
-N : "Previous search result",
-q : "Quit"
+| Command or key | Description |
+| --- | --- |
+| `cat notes.txt` | Display file contents |
+| `cat -n notes.txt` | Display file contents with line numbers |
+| `cat > notes.txt` | Write input into a file |
+| `cat >> notes.txt` | Append input to a file |
+| `less notes.txt` | Read a large file interactively |
+| `Space` / `b` | Move forward / backward one page in `less` |
+| `Arrow Down` / `Arrow Up` | Move down / up in `less` |
+| `/error` | Search for `error` in `less` |
+| `n` / `N` | Move to the next / previous search result in `less` |
+| `q` | Quit `less` |
+| `head notes.txt` | Display the first 10 lines |
+| `head -n 5 notes.txt` | Display the first 5 lines |
+| `tail notes.txt` | Display the last 10 lines |
+| `tail -f /var/log/syslog` | Continuously display new lines added to the file |
 
-head notes.txt : "displays 10 first lines",
-head -n 5 notes.txt : "display 5",
-tail notes.txt : "last 10 lines",
-tail -f /var/log/syslog : "continuously displays new lines added to the file",
+## 9. Searching and counting
 
-grep "error" server.log : "Search in a file",
-grep -i "error" server.log : "Case insensitive",
-grep -r "TODO" . : "Search recusively inside directories",
-grep -E "error|warning" server.log  : "seach for multiple terms",
--v : "Show lines that DON'T match",
--c : "Count matching lines".
+| Command | Description |
+| --- | --- |
+| `grep "error" server.log` | Search for a term in a file |
+| `grep -i "error" server.log` | Search without case sensitivity |
+| `grep -r "TODO" .` | Search recursively in directories |
+| `grep -E "error|warning" server.log` | Search for multiple terms |
+| `grep -v "error" server.log` | Show lines that do not match |
+| `grep -c "error" server.log` | Count matching lines |
+| `wc notes.txt` | Count lines, words, and bytes |
+| `wc -l notes.txt` | Count lines |
+| `wc -w notes.txt` | Count words |
+| `wc -c notes.txt` | Count bytes |
 
-wc notes.txt : "return nb lines, words, bytes"
--l : "count lines",
--w : "count words",
--c : "count bytes",
+## 10. Permissions, users, and groups
 
-9. permissions
-
-chmod: Change permission
-whoami : "display current user",
-id : "Displays your user ID, group ID and group memberships",
-groups : "Displays your groups",
-getent passwd : "Displays user account entries",
-getent group :" Displays group entries",
-
-10. usees&groups
-
-useradd	: "Create a user"
-adduser	: "Interactive user creation"
-usermod	: "Modify a user"
-userdel	: "Delete a user"
-passwd	: "Set/change password"
-groupadd : "Create a group"
-groupdel : "Delete a group"
-gpasswd : "Manage group membership"
-getent : "Retrieve account/group information"
+| Command | Description |
+| --- | --- |
+| `chmod` | Change permissions |
+| `whoami` | Display the current user |
+| `id` | Display user ID, group ID, and group memberships |
+| `groups` | Display the current user's groups |
+| `getent passwd` | Display user account entries |
+| `getent group` | Display group entries |
+| `useradd` | Create a user |
+| `adduser` | Create a user interactively |
+| `usermod` | Modify a user |
+| `userdel` | Delete a user |
+| `passwd` | Set or change a password |
+| `groupadd` | Create a group |
+| `groupdel` | Delete a group |
+| `gpasswd` | Manage group membership |
+| `getent` | Retrieve account or group information |
